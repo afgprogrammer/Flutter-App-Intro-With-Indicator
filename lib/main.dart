@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
           Container(
-            margin: EdgeInsets.only(bottom: 40),
+            margin: EdgeInsets.only(bottom: 60),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: _buildIndicator(),
