@@ -6,6 +6,8 @@ This repository is a part of the 100-day design in Flutter.
 
 In this video, we use Flutter Text, AnimatedContainer, Container, and so on in the one-speed video.
 
+Designed by [Yasir Ahmad Noori (@yasirnoori.yn)](https://bit.ly/2Lswf9j) on Instagram
+
 [Youtube Video](https://youtu.be/d_hQoKomfdE)
 
 ## Last Design
