@@ -137,8 +137,8 @@ class _HomePageState extends State<HomePage> {
   Widget _indicator(bool isActive) {
     return AnimatedContainer(
       duration: Duration(milliseconds: 300),
-      height: 8,
-      width: isActive ? 30 : 8,
+      height: 6,
+      width: isActive ? 30 : 6,
       margin: EdgeInsets.only(right: 5),
       decoration: BoxDecoration(
         color: ColorSys.secoundry,
