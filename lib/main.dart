@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:app_intro_day21/helpers/ColorsSys.dart';
 import 'package:app_intro_day21/helpers/Strings.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  PageController _pageController;
+  late PageController _pageController;
   int currentIndex = 0;
 
   @override
@@ -101,24 +102,30 @@ class _HomePageState extends State<HomePage> {
           !reverse ? 
           Column(
             children: <Widget>[
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                child: Image.asset(image),
+              FadeInUp(
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: Image.asset(image),
+                ),
               ),
               SizedBox(height: 30,),
             ],
           ) : SizedBox(),
-          Text(title, style: TextStyle(
+          FadeInUp(
+            duration: Duration(milliseconds: 900),
+                child: Text(title, style: TextStyle(
             color: ColorSys.primary,
             fontSize: 30,
             fontWeight: FontWeight.bold
-          ),),
+          ),)),
           SizedBox(height: 20,),
-          Text(content, textAlign: TextAlign.center, style: TextStyle(
+         FadeInUp(
+          duration: Duration(milliseconds: 1200),
+              child: Text(content, textAlign: TextAlign.center, style: TextStyle(
             color: ColorSys.gray,
             fontSize: 20,
             fontWeight: FontWeight.w400
-          ),),
+          ),)),
           reverse ? 
           Column(
             children: <Widget>[
